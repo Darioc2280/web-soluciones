@@ -1,0 +1,81 @@
+span.section-heading-upper.ajt{
+color: white;
+}
+
+span.section-heading-lower.ajt{
+color: white;
+}
+
+p.mb-3.ajt{
+color: white;
+}
+ol.lista-pasos{
+
+text-align: center;
+
+margin-right: 33px;
+
+margin-top: 38px;
+}
+ol li.pasos{
+    margin-top: 13px;
+}
+a.btn-whatsapp{
+    position: inherit;
+    margin-top: 50px;
+}
+
+i.fab.fa-whatsapp.btn-whatsapp{color: green;font-size: 105px;margin-top: 20px;}
+
+span.pregunta{
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 900;
+    padding-bottom: 3.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+span.respuesta{
+    display: block;
+    font-size: 1.4rem;
+    color: #3c3b3b;
+    font-weight: 500;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+h2.contacto-tec{
+
+color: white;
+
+font-size: 29px;
+
+text-align: center;
+
+padding: 4px;
+}
+
+a.btn-whatsapp-tec{
+    position: inherit;
+    padding: 118px;
+    /* margin-top: 118px; */
+}
+
+
+i.fab.fa-whatsapp.btn-whatsapp.ajt{
+    color: white;
+    font-size: 105px;
+    margin-top: 20px;
+}
+
+
+@media (min-width: 992px) {
+    a.btn-whatsapp-tec{
+        position: inherit;
+        padding-left: 510px;
+    }
+   
+}
+}

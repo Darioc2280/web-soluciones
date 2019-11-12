@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Preguntas & Respuestas{% endblock %}
+
+{% block content %}
+  {% for querys in query reversed %}
+
+    <section class="page-section">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item-title d-flex">
+            <div class="bg-faded p-5 d-flex mr-auto rounded">
+              <h2 class="section-heading mb-0">
+                <span class="pregunta">{{querys.question}}</span>
+
+                <span class="respuesta">{{querys.answer}}</span>
+              </h2>
+            </div>
+          </div>
+          <!--            <a href="{{querys.url}}">Link do video</a>-->
+
+          <div class="product-item-description d-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+              <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{querys.image.url}}" alt="">
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  {% endfor %}
+<div class="container">
+ <h2 class="contacto-tec">Contacto directo departamento tecnico</h2>
+<a class="btn-whatsapp-tec" href="https://api.whatsapp.com/send?phone=595986630404&text=He%20comprado%20un%20receptor%20y%20necesito%20ayuda%20tecnica"  target="_blank"><i class="i fab fa-whatsapp btn-whatsapp ajt"></i></a>
+</div>
+{% endblock %}
